@@ -47,9 +47,7 @@ if (isset($_POST['update'])) {
     <title>Edit Pengguna</title>
 </head>
 <body>
-    <h1>Edit Data Pengguna</h1>
-    <hr>
-    
+    <h1>Edit Data Pengguna</h1>    
     <form method="POST" action="">
         <label for="nama">Nama:</label><br>
         <input type="text" id="nama" name="nama" value="<?php echo htmlspecialchars($user['nama']); ?>" required><br><br>
@@ -57,7 +55,7 @@ if (isset($_POST['update'])) {
         <label for="password">Password Baru:</label><br>
         <input type="password" id="password" name="password" required><br><br>
         
-        <button type="submit" name="update" onclick="return confirm('Yakin nih mau diubah?')">Update</button>
+        <button type="submit" name="update" onclick="return confirm('Yakin nih mau diubah?')">Update</button><br><br>
         <button type="button" onclick="window.location.href='dashboard.php'">Batal</button>
     </form>
 </body>
